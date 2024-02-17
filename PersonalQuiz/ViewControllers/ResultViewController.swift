@@ -36,7 +36,7 @@ final class ResultViewController: UIViewController {
           animalCounts[animal.animal, default: 0] += 1
         }
         let sortedAnimalCounts = animalCounts.sorted { $0.value > $1.value }
-          print(sortedAnimalCounts)
+        print(sortedAnimalCounts)
         
         return sortedAnimalCounts.first?.key
     }
